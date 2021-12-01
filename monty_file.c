@@ -3,10 +3,10 @@
 global_t vars;
 
 /**
- * init - initialize all variables into the struct global_t
- * and keep values while the program finish
+ * init - Initialize all variables into the struct global_t
+ * And keep values while the program finish
  * @fd: - file descriptor of file opened
- * Return: No return
+ * Return: Nothing
  */
 void init(FILE *fd)
 {
