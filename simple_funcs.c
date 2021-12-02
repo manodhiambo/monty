@@ -4,6 +4,7 @@
  * @head: Reference to the head of doubly linked list
  * @line_num: Reference to the line with an error
  */
+
 void stack_push(stack_t **head, unsigned int line_num)
 {
 	int number = 0;
@@ -34,11 +35,13 @@ void stack_push(stack_t **head, unsigned int line_num)
 	else
 		add_dnodeint_end(head, number);
 }
+
 /**
  * stack_pall - this function print all values on the doubly linked list
  * @head: reference to the head of doubly linked list
  * @line_num: reference to line we are reading
  */
+
 void stack_pall(stack_t **head, unsigned int line_num)
 {
 	stack_t *tmp;
@@ -53,12 +56,14 @@ void stack_pall(stack_t **head, unsigned int line_num)
 		tmp = tmp->next;
 	}
 }
+
 /**
  * stack_pint - prints only the value at the top of the doubly linked list
  * @head: reference to the head of doubly linked list
  * @line_num: reference to line number if there is an error
  * Return: no return
  */
+
 void stack_pint(stack_t **head, unsigned int line_num)
 {
 	if (*head == NULL)
@@ -77,6 +82,7 @@ void stack_pint(stack_t **head, unsigned int line_num)
  * @line_num: reference to line number if there is an error
  * Return: no return
  */
+
 void stack_pop(stack_t **head, unsigned int line_num)
 {
 	stack_t *tmp;
@@ -98,6 +104,7 @@ void stack_pop(stack_t **head, unsigned int line_num)
  * @line_num: reference to line number if there is an error
  * Return: no return
  */
+
 void stack_swap(stack_t **head, unsigned int line_num)
 {
 	int nel = 0;
